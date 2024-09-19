@@ -59,24 +59,14 @@ By default, `runif()` samples the range from 0 to 1:
 ``` {python} 
 file_path = 'https://github.com/Hezel2000/GeoCosmoChemDataAndTools/tree/main/csv'
 
+import pandas as pd
+import matplot.lib as plt
+
+data= pd.read_csv(
+
+COLUMNS = df.keys()
+plt.plot(data[COLUMNS[0]], data [COLUMNS[1]],)
+plt.show()
 ```
 
 
-If you forgot how the standard deviation is calculated (and because I wanted to include a more complex formula for instructive purposes): 
-
-$$
-\sigma = \sqrt{\frac{\sum{(x_i-\mu)^2}}{N}} 
-$$
-with: 
-
-| Symbol || Explanation |
-|----:|----|:----|
-|$\sigma$| = | Population standard deviation| 
-|$N$| = | Size of population |
-|x~i~| = | each value from the population |
-|µ| = | mean of the population |
-
-# Conclusions
-As expected, the number from random distributions are pretty random 
-
-Have fun while doing the exercise and don't hesitate to ask for help! 
